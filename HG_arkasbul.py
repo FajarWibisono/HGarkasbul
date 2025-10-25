@@ -508,3 +508,25 @@ def generate_simple_analysis(gaji, insentif, persen_insentif, items_melebihi, it
 if __name__ == "__main__":
     main()
 
+# Set page config
+st.set_page_config(
+    page_title="TEDIWIRA",
+    page_icon="📓",
+    layout="wide"
+)
+
+# Sembunyikan header Streamlit Cloud (Fork, GitHub, More)
+st.markdown(
+    """
+    <style>
+        .stApp [data-testid="stHeader"] {
+            display: none !important;
+        }
+        .stApp [data-testid="stToolbar"] {
+            display: none !important;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+

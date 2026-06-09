@@ -38,7 +38,7 @@ GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"  # Fixed traili
 # Menggunakan model yang tersedia di Groq
 MODEL_NAME = "openai/gpt-oss-120b"
 # Fungsi untuk mendapatkan respons dari model Groq
-def get_groq_response(prompt, max_tokens=4096)
+def get_groq_response(prompt, max_tokens=4096):
     headers = {
         "Authorization": f"Bearer {GROQ_API_KEY}",
         "Content-Type": "application/json"
